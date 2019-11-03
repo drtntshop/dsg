@@ -1,7 +1,7 @@
 <?php
-$name = $_POST["name"];
-$visitor_email = $_POST["email"];
-$message = $_POST["message"];
+$Name_for_Intro = $_POST["Intro Text"];
+$Song_for_Intro = $_POST["Song"];
+$visitor_email = $_POST["Email"];
 
 
 $email_from = "drtnt.introhandler@gmail.com";
@@ -10,7 +10,6 @@ $email_subject = "New Form Submission";
 
 $email_body = "User Name: $name.\n".
 "User Email: $visitor_email.\n".
-"User Message: $message.\n";
 
 
 $to = "drgametnt@gmail.com";
