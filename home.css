@@ -1,0 +1,177 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #24252A;
+}
+
+li, a, button {
+    font-weight: 500;
+    font-size: 16px;
+    color: #edf0f1;
+    transition: 0.7s;
+    text-decoration: none;
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;    
+}
+
+img {
+   cursor: pointer;
+   width: 100px;
+}
+
+.nav__links {
+    list-style: none;
+}
+
+.nav__links li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav__links li a {
+	transition: 0.7s;
+}
+
+.nav__links li a:hover {
+    color: #c1c1c1;
+}
+
+li a:hover{
+	color: #c1c1c1;
+}
+
+.bordertext {
+	background-color: #24252A;
+	border: 2px solid #edf0f1;
+	padding: 15px 25px;
+	transition: 0.7s;
+	border-radius: 2em;
+}
+
+.bordertext:hover{
+	background-color: #edf0f1;
+	color: #24252A;
+}
+
+/*--------------- Responsive section  --------------- */
+
+.responsive{
+	position: absolute;
+      right: 55px;
+      top: 20px;
+      width: 30px;
+      height: 30px;
+      float: right;
+      visibility: hidden;
+      opacity: 0;
+      list-style: none;
+      display: inline-flex;
+}
+
+.responsive__links {
+    list-style: none;
+}
+
+.responsive__links li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.responsive__links li a {
+	transition: 0.7s;
+}
+
+.responsive__links li a:hover {
+    color: #c1c1c1;
+}
+
+.head{
+	transform: translateX(300px);
+	color: white;
+}
+
+.head li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.head h1{
+	font-size: 35px;
+}
+
+.head p{
+	font-size: 25px;
+}
+
+.underline{
+	text-decoration: underline;
+	color: orange;
+}
+
+
+h2{
+	padding-bottom: 25px;
+}
+
+.download{
+	width: 400px;
+}
+
+button {
+    padding: 9px 25px;
+    background-color: rgba(0,136,169,1);
+    border: none;
+    transition: 0.7s;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgba(0,136,169,0.8);
+}
+
+.menu{
+	visibility: hidden;
+}
+
+@media(max-width: 1000px) {
+
+	ul{
+		visibility: hidden;
+		transition: 1s;
+		opacity: 0;
+	}
+    
+    li, a, button {
+    	font-size: 26px;
+    }
+
+	.menu{
+		visibility: visible;
+		opacity: 1;
+		transition: 1s;
+	}
+
+	.head h1{
+		font-size: 25px;
+		transition: 1s;
+	}
+
+	.head p{
+		font-size: 18px;
+		transition: 1s;
+	}
+
+	.responsive{
+		visibility: visible;
+		opacity: 1;
+		transition: 1s;
+	}
+}

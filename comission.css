@@ -1,0 +1,54 @@
+body{
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	background: linear-gradient(rgba(0, 0, 0, 0),rgba(0, 0, 0, 0)),url(introcomission.png);
+	background-size: cover;
+	background-position: center;
+	font-family: apple;
+	animation-name: fade-in;
+	animation-duration: 2s;
+}
+
+@keyframes fade-in{
+	0%{
+		opacity: 0;
+	}
+
+	100%{
+		opacity: 1;
+	}
+}
+
+@font-face{
+	src:url(iPhone.otf);
+	font-family: apple;
+}
+
+p{
+	color: #fff;
+	font-size: 30px;
+}
+
+h1{
+	color: #fff;
+	font-size: 60px;
+}
+
+form{
+	transition: 2s;
+	padding-top: 50px;
+}
+
+.form-control{
+	width: 800px;
+	transition: 1s;
+	background: transparent;
+	border: none;
+	outline: none;
+	border-bottom: 1px solid #fff;
+	color: #fff;
+	font-size: 18px;
+	margin-bottom: 16px;
+	font-family: apple;
+}
