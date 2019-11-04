@@ -1,27 +1,15 @@
 <?php
-$Name_for_Intro = $_POST["Intro Text"];
-$Song_for_Intro = $_POST["Song"];
-$Email_for_Intro = $_POST["Email"];
 
+if (isset($_POST['submit'])) {
+$name = $_POST['name'];
+$color = $_POST['color'];
+$mailFrom = $_POST['mail'];
+$value = $_POST['value'];
 
-$email_from = "drtnt.introhandler@gmail.com";
+$mailTo = "kasfirahman@hotmail.com";
+$headers = "From: ".$mailFrom;
+$txt = "You have received an e-mail from ".$name.".\n\n".$message;
 
-$email_subject = "New Form Submission";
-
-$email_body = "User Name: $Name_for_Intro.\n".
-"User Email: $visitor_email.\n".
-
-
-$to = "drgametnt@gmail.com";
-
-$headers = "From: $Email_for_Intro \r\n";
-
-$headers .= "Reply To: $Email_for_Intro \r\n";
-
-mail($to,email_subject,$email_body,$headers);
-
-header("Location: comission.html");
-
-
-
-?>
+mail($mailTo, $txt, $headers);
+header("Location: comission.html?mailsend");
+}
